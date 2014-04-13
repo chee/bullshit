@@ -6,7 +6,7 @@ bullshit - assemble a stream of bullshit from words in a file
 
 ## Bullshit
 
-prints a one line nonsense phrase assembed from random words. 
+prints a one line nonsense phrase assembed from random words.
 if a `file` is specified the words are taken from that file;
 otherwise they are taken from the included bullshit.
 
