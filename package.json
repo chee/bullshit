@@ -1,0 +1,21 @@
+{
+  "author": "chee <chee@snaek.org>",
+	"bin": "./bullshit.js",
+  "dependencies": {
+    "byline": "^4.1.1"
+  },
+  "description": "mental javascript implementation of stanley.lieber's bullshit from plan9front",
+	"licenses": [
+		{
+			"type": "LPL",
+			"url": "http://plan9.bell-labs.com/plan9/license.html"
+		}
+	],
+  "name": "bullshit",
+  "preferGlobal": true,
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/chee/bullshit.git"
+  },
+  "version": "1.0.0"
+}
