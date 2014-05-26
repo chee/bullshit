@@ -4,7 +4,7 @@ process.stdin.setEncoding("utf8")
 var byline = require("byline")
 var fs = require("fs")
 var protocols = [], ends = [], suffixes = [], starts = [], noends = [], words = []
-var file = process.argv[2] || __dirname + "/bullshit";
+var file = process.argv[2] || __dirname + "/bullshit"
 var stream = Boolean(process.stdin.isTTY) ?  byline(fs.createReadStream(file)) : byline.createStream(process.stdin)
 
 stream.on("data", function (chunk) {
@@ -36,10 +36,10 @@ stream.on("end", function() {
       return this[(random() * this.length)| 0]
     }
 
-    var hasSuffix, last;
+    var hasSuffix, last
 
     var throwDice = function throwDice (out) {
-      var total = ((random() * 7) | 0) + 3;
+      var total = ((random() * 7) | 0) + 3
       this.out || (this.out = 0)
       this.out += (out | 0)
       return random() * min(3, total - this.out) | 0
@@ -51,9 +51,10 @@ stream.on("end", function() {
 
     var withDice = function withDice (body) {
       this.n || (this.n = 0)
-      var i;
-      for (this.n = throwDice(this.n), i = 0; i < n; i++) {
-        body()
+      var i = 0
+      this.n = throwDice(this.n)
+      while (i < n) {
+        i++, body()
       }
     }
 
