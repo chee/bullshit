@@ -1,4 +1,6 @@
 node
+app
+blockchain
 cloud
 grid
 base
@@ -16,6 +18,7 @@ NoSQL |
 cache
 persistence |
 self-signing |
+deep-learning |
 scripting |
 template
 realtime |
@@ -35,6 +38,7 @@ GPU |
 shader
 agile ^
 advanced ^
+converged ^
 leveraged ^
 extended ^
 basic ^
@@ -61,6 +65,7 @@ browser
 extension
 open-source ^
 module
+enhancement
 proxy
 hosting
 wrapper
@@ -86,6 +91,8 @@ general-purpose |
 out-scaling |
 generic ^
 mobile ^
+responsive ^
+progressive ^
 property |
 secure ^
 overflow-preventing ^
